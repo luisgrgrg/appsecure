@@ -13,7 +13,7 @@ export function Login() {
                 <img className="rounded-t-lg" src="/images/icon-secureobyco.png" alt="" />
                 {/* Tarjeta INTERNA */}
                 <div className="bg-mainColor2 bg-opacity-005 rounded-30 shadow p-4 w-72 h-[305px] mt-5 pt-10">
-                    <h1 className="text-center text-white font-semibold	 mb-4 text-2xl">OBYSecure</h1>
+                    <h1 className="text-center text-white mb-4 text-2xl">OBYSecure</h1>
                     <form className="w-full place-items-center">
                         <div className="mb-5">
                             <input
