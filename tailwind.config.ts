@@ -23,6 +23,9 @@ export default {
         '001': '0.001px',
         '5': '5px',
       },
+      fontSize: {
+        'xxs': '0.55rem', 
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

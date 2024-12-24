@@ -46,6 +46,7 @@ export function Login() {
                         </button>
                     </form>
                 </div>
+                <p className="text-xxs opacity-40 mt-1 pt-2 text-white">- BY LuisDev -</p>
             </div>
             {/* Columna Derecha Vacía */}
             <div>
