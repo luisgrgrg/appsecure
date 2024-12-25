@@ -22,7 +22,7 @@ export function Login() {
                                 className="bg-mainColor2 bg-opacity-1 text-sm text-gray-100 rounded-lg 
                              focus:ring-blue-500 focus:border-001 block  p-2.5"
                                 placeholder="usuario"
-                                required
+                                required 
                             />
                         </div>
                         <div className="mb-5">
@@ -54,3 +54,5 @@ export function Login() {
         </div>
     )
 }
+
+export default Login
