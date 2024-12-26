@@ -20,8 +20,8 @@ export function Login() {
                             <input
                                 type="email"
                                 id="email"
-                                className="bg-mainColor2 bg-opacity-1 text-sm text-gray-100 rounded-lg 
-                             focus:ring-blue-500 focus:border-001 block  p-2.5"
+                                className="bg-mainColor2 bg-opacity-1  w-[200] text-sm text-gray-100 rounded-lg 
+                             focus:ring-blue-500 focus:border-001 block p-2.5"
                                 placeholder="usuario"
                                 required 
                             />
@@ -30,7 +30,7 @@ export function Login() {
                             <input
                                 type="password"
                                 id="password"
-                                className="bg-mainColor2 bg-opacity-1 text-gray-100 text-sm rounded-lg 
+                                className="bg-mainColor2 bg-opacity-1  w-[200] text-gray-100 text-sm rounded-lg 
                              focus:ring-blue-500 focus:border-blue-500 block p-2.5 
                             "
                                 placeholder="contraseña"
