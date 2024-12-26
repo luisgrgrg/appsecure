@@ -34,6 +34,8 @@ export default {
         mainColor2: "#ffffff",
         purpleButton: "#9C3FE4",
         orangeButton: "#C65647",
+        greenButton: "#008218",
+        darkGreenButton: "#004108",
       },
     },
   },

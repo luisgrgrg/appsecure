@@ -18,20 +18,20 @@ export function Dashboard() {
                         <button
                             type="submit"
                             className="text-white focus:ring-4 w-full
-                            bg-gradient-to-r from-purpleButton to-orangeButton
+                            bg-gradient-to-r from-greenButton to-darkGreenButton
                            focus:outline-none focus:ring-blue-300 rounded-lg 
                            text-sm sm:w-auto px-5 py-2.5 text-center font-bold">
-                            Ingresa
+                            CONSULTA POR QR
                         </button>
                     </div>
                     <div className="mt-12">
                         <button
                             type="submit"
                             className="text-white focus:ring-4 w-full
-                            bg-gradient-to-r from-purpleButton to-orangeButton
+                            bg-gradient-to-r from-greenButton to-darkGreenButton
                            focus:outline-none focus:ring-blue-300 rounded-lg 
                            text-sm sm:w-auto px-5 py-2.5 text-center font-bold">
-                            Ingresa
+                            CONSULTA POR CC
                         </button>
 
                     </div>
