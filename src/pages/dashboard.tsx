@@ -9,12 +9,12 @@ export function Dashboard() {
             <div></div>
 
             {/* Columna Central con Tarjeta Negra */}
-            <div className="bg-gradient-to-r from-mainColor to-mainColorDeg w-72 shadow rounded-30  p-4 flex flex-col items-center pt-10">
+            <div className="bg-gradient-to-r from-mainColor to-mainColorDeg lg:w-72  md:w-72 sm:w-11/12  min-h-[250px] shadow rounded-30  p-4 flex flex-col items-center pt-10">
                 {/* Tarjeta INTERNA */}
-                <div className="bg-mainColor2 bg-opacity-005 rounded-30 shadow p-4 w-72 h-[445px] place-items-center">
+                <div className="bg-mainColor2 bg-opacity-005 rounded-30 shadow p-4 lg:w-72  md:w-72 sm:w-11/12 h-[445px] place-items-center">
                     {/* Espacio Superior (Espacio Estético) */}
                     <img className="rounded-t-lg object-contain w-[200]" src="/images/icon-secureobyco.png" alt="" />
-                    <div className="mt-[50]">
+                    <div className="mt-[50] sm:mt-[20]">
                         <button
                             type="submit"
                             className="text-white focus:ring-4 w-full
@@ -24,7 +24,7 @@ export function Dashboard() {
                             Ingresa
                         </button>
                     </div>
-                    <div className="mt-[30]">
+                    <div className="mt-[30] sm:mt-[20]">
                         <button
                             type="submit"
                             className="text-white focus:ring-4 w-full
