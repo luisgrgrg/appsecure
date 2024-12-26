@@ -12,7 +12,7 @@ export function Qrpage() {
             {/* Columna Central */}
             <div className="bg-gradient-to-r from-mainColor to-mainColorDeg w-72 shadow rounded-[30px] p-4 flex flex-col items-center pt-10">
                 <div className="bg-mainColor2 bg-opacity-5 rounded-[30px] shadow p-4 w-72 h-[445px] flex flex-col items-center justify-start relative">
-                    <h2 className="text-xl font-bold mb-4 text-white">Escanea un Cdigo QR</h2>
+                    <h2 className="text-xl font-bold mb-4 text-white">Escanea un COdigo QR</h2>
 
 
 
