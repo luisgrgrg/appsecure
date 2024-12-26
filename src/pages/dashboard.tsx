@@ -9,25 +9,25 @@ export function Dashboard() {
             <div></div>
 
             {/* Columna Central con Tarjeta Negra */}
-            <div className="bg-gradient-to-r from-mainColor to-mainColorDeg  min-h-[250px] shadow rounded-30  p-4 flex flex-col items-center pt-10">
+            <div className="bg-gradient-to-r from-mainColor to-mainColorDeg w-72 shadow rounded-30  p-4 flex flex-col items-center pt-10">
                 {/* Tarjeta INTERNA */}
-                <div className="bg-mainColor2 bg-opacity-005 rounded-30 shadow p-4 h-[445px] place-items-center">
+                <div className="bg-mainColor2 bg-opacity-005 rounded-30 shadow p-4 w-72 h-[445px] place-items-center">
                     {/* Espacio Superior (Espacio Estético) */}
                     <img className="rounded-t-lg object-contain w-[200]" src="/images/icon-secureobyco.png" alt="" />
-                    <div className="mt-[50]">
+                    <div className="mt-12">
                         <button
                             type="submit"
-                            className="text-white focus:ring-4 w-full sm:mt-[20]
+                            className="text-white focus:ring-4 w-full
                             bg-gradient-to-r from-purpleButton to-orangeButton
                            focus:outline-none focus:ring-blue-300 rounded-lg 
                            text-sm sm:w-auto px-5 py-2.5 text-center font-bold">
                             Ingresa
                         </button>
                     </div>
-                    <div className="mt-[30] ">
+                    <div className="mt-12">
                         <button
                             type="submit"
-                            className="text-white focus:ring-4 w-full sm:mt-[20]
+                            className="text-white focus:ring-4 w-full
                             bg-gradient-to-r from-purpleButton to-orangeButton
                            focus:outline-none focus:ring-blue-300 rounded-lg 
                            text-sm sm:w-auto px-5 py-2.5 text-center font-bold">
