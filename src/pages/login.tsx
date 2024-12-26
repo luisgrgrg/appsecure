@@ -4,16 +4,16 @@ import "../app/globals.css";
 export function Login() {
 
     return (
-        <div className="grid grid-cols-3 h-screen place-items-center sm:grid-cols-1 lg:grid-cols-3 sm:px-4">
+        <div className="grid grid-cols-3 h-screen place-items-center sm:grid-cols-1 lg:grid-cols-3">
             {/* Columna Izquierda Vacía */}
             <div></div>
 
             {/* Columna Central con Tarjeta Negra */}
-            <div className="bg-gradient-to-r from-mainColor to-mainColorDeg w-72 sm:w-11/12 min-h-[250px] shadow rounded-30  p-4 flex flex-col items-center pt-10">
+            <div className="bg-gradient-to-r from-mainColor to-mainColorDeg lg:w-72  md:w-72 sm:w-11/12  min-h-[250px] shadow rounded-30  p-4 flex flex-col items-center pt-10">
                 {/* Espacio Superior (Espacio Estético) */}
                 <img className="rounded-t-lg" src="/images/icon-secureobyco.png" alt="" />
                 {/* Tarjeta INTERNA */}
-                <div className="bg-mainColor2 bg-opacity-005 rounded-30 shadow p-4 w-72 h-[305px] mt-5 pt-10">
+                <div className="bg-mainColor2 bg-opacity-005 rounded-30 shadow p-4 w-72 h-[305px] mt-5 pt-10 sm:px-6">
                     <h1 className="text-center text-white mb-4 text-2xl">OBYSecure</h1>
                     <form className="place-items-center">
                         <div className="mb-5">
@@ -23,10 +23,10 @@ export function Login() {
                                 className="bg-mainColor2 bg-opacity-1  text-sm text-gray-100 rounded-lg 
                              focus:ring-blue-500 focus:border-001 block p-2.5"
                                 placeholder="usuario"
-                                required 
+                                required
                             />
                         </div>
-                        <div className="mb-5"> 
+                        <div className="mb-5">
                             <input
                                 type="password"
                                 id="password"
