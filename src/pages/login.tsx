@@ -1,4 +1,5 @@
 "use client"
+import "../app/globals.css";
 
 export function Login() {
 
@@ -14,7 +15,7 @@ export function Login() {
                 {/* Tarjeta INTERNA */}
                 <div className="bg-mainColor2 bg-opacity-005 rounded-30 shadow p-4 w-72 h-[305px] mt-5 pt-10">
                     <h1 className="text-center text-white mb-4 text-2xl">OBYSecure</h1>
-                    <form className="w-full place-items-center">
+                    <form className="place-items-center">
                         <div className="mb-5">
                             <input
                                 type="email"
@@ -25,7 +26,7 @@ export function Login() {
                                 required 
                             />
                         </div>
-                        <div className="mb-5">
+                        <div className="mb-5"> 
                             <input
                                 type="password"
                                 id="password"
