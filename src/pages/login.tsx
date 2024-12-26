@@ -4,12 +4,12 @@ import "../app/globals.css";
 export function Login() {
 
     return (
-        <div className="grid grid-cols-3 h-screen place-items-center sm:grid-cols-1 lg:grid-cols-3">
+        <div className="grid grid-cols-3 h-screen place-items-center sm:grid-cols-1 lg:grid-cols-3 sm:px-4">
             {/* Columna Izquierda Vacía */}
             <div></div>
 
             {/* Columna Central con Tarjeta Negra */}
-            <div className="bg-gradient-to-r from-mainColor to-mainColorDeg w-72 min-h-[250px] shadow rounded-30  p-4 flex flex-col items-center pt-10">
+            <div className="bg-gradient-to-r from-mainColor to-mainColorDeg w-72 sm:w-11/12 min-h-[250px] shadow rounded-30  p-4 flex flex-col items-center pt-10">
                 {/* Espacio Superior (Espacio Estético) */}
                 <img className="rounded-t-lg" src="/images/icon-secureobyco.png" alt="" />
                 {/* Tarjeta INTERNA */}
@@ -20,7 +20,7 @@ export function Login() {
                             <input
                                 type="email"
                                 id="email"
-                                className="bg-mainColor2 bg-opacity-1  w-[200] text-sm text-gray-100 rounded-lg 
+                                className="bg-mainColor2 bg-opacity-1  text-sm text-gray-100 rounded-lg 
                              focus:ring-blue-500 focus:border-001 block p-2.5"
                                 placeholder="usuario"
                                 required 
@@ -30,7 +30,7 @@ export function Login() {
                             <input
                                 type="password"
                                 id="password"
-                                className="bg-mainColor2 bg-opacity-1  w-[200] text-gray-100 text-sm rounded-lg 
+                                className="bg-mainColor2 bg-opacity-1  text-gray-100 text-sm rounded-lg 
                              focus:ring-blue-500 focus:border-blue-500 block p-2.5 
                             "
                                 placeholder="contraseña"
