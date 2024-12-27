@@ -1,6 +1,6 @@
 "use client"
 
-export function Dashboard() {
+export default function Dashboard() {
 
     return (
         <div className="grid grid-cols-3 h-screen place-items-center sm:grid-cols-1 lg:grid-cols-3">
@@ -44,5 +44,3 @@ export function Dashboard() {
         </div>
     )
 }
-
-export default Dashboard

@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { Html5QrcodeScanner, Html5QrcodeScanType } from "html5-qrcode";
 
-export function Qrpage() {
+export default function Qrpage() {
 
     const [scanResult, setScanResult] = useState('');;
 
@@ -66,4 +66,3 @@ export function Qrpage() {
     );
 }
 
-export default Qrpage;

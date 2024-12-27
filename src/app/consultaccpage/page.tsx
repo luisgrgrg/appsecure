@@ -1,6 +1,6 @@
 "use client";
 
-export function ConsultaPage() {
+export default function ConsultaPage() {
 
     return (
         <div className="min-h-screen grid grid-cols-3 place-items-center sm:grid-cols-1">
@@ -43,5 +43,3 @@ export function ConsultaPage() {
         </div>
     );
 }
-
-export default ConsultaPage;
