@@ -9,7 +9,7 @@ export function Login() {
             <div></div>
 
             {/* Columna Central con Tarjeta Negra */}
-            <div className="bg-gradient-to-r from-mainColor to-mainColorDeg lg:w-72  md:w-72 sm:w-11/12  min-h-[250px] shadow rounded-30  p-4 flex flex-col items-center pt-10">
+            <div className="bg-gradient-to-r from-mainColor to-mainColorDeg w-72 shadow rounded-[30px] p-4 flex flex-col items-center pt-10">
                 {/* Espacio Superior (Espacio Estético) */}
                 <img className="rounded-t-lg" src="/images/icon-secureobyco.png" alt="" />
                 {/* Tarjeta INTERNA */}
