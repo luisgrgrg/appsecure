@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect } from "react";
-import "../app/globals.css";
 import { Html5QrcodeScanner, Html5QrcodeScanType } from "html5-qrcode";
 
 export function Qrpage() {

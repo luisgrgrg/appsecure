@@ -1,16 +1,11 @@
 import './globals.css'
-import { Login } from "@/pages/login"
-import { Dashboard } from "@/pages/dashboard"
-import { Qrpage } from "@/pages/qrpage"
-import { ConsultaPage } from "@/pages/consultapage"
+import { Login } from "@/components/login"
+
 
 export default function Home() {
   return (
     <div className="grid cols-1 gap-4 ">
       <Login/>
-      <Dashboard/>
-      <Qrpage/>
-      <ConsultaPage/>
     </div>
   );
 }
