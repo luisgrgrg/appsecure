@@ -1,5 +1,4 @@
 "use client";
-import { useState } from "react";
 import "../app/globals.css";
 
 export function ConsultaPage() {
