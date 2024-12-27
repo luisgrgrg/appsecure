@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import "../app/globals.css";
-import { Html5QrcodeScanner } from "html5-qrcode";
+import { Html5QrcodeScanner, Html5QrcodeScanType } from "html5-qrcode";
 
 export function Qrpage() {
 
@@ -17,6 +17,7 @@ export function Qrpage() {
                     height: 250,
                 },
                 fps: 5,
+                supportedScanTypes: [Html5QrcodeScanType.SCAN_TYPE_CAMERA],
             },
             true // verbose para depuración
         );
