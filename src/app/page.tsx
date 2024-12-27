@@ -2,6 +2,7 @@ import './globals.css'
 import { Login } from "@/pages/login"
 import { Dashboard } from "@/pages/dashboard"
 import { Qrpage } from "@/pages/qrpage"
+import { ConsultaPage } from "@/pages/consultapage"
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Login/>
       <Dashboard/>
       <Qrpage/>
+      <ConsultaPage/>
     </div>
   );
 }
