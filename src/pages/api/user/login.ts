@@ -4,7 +4,7 @@ import axios from 'axios';
 // pages/api/user/login.ts
 class Service {
   login = async (user: string, pass: string) => {
-    try {
+    try { 
       const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}login`, { user, pass });
       const { token } = response.data;
       // Ojo: localStorage no estará disponible en SSR, solo en cliente:
