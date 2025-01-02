@@ -1,6 +1,9 @@
 "use client"
+import { useRouter } from 'next/navigation'
 
 export default function Dashboard() {
+
+    const router = useRouter()
 
     return (
         <div className="grid grid-cols-3 h-screen place-items-center sm:grid-cols-1 lg:grid-cols-3">
@@ -19,7 +22,8 @@ export default function Dashboard() {
                             className="text-white focus:ring-4 w-full
                             bg-gradient-to-r from-greenButton to-darkGreenButton
                            focus:outline-none focus:ring-blue-300 rounded-lg 
-                           text-sm sm:w-auto px-5 py-2.5 text-center font-bold">
+                           text-sm sm:w-auto px-5 py-2.5 text-center font-bold"
+                           onClick={()=>router.push('/qrpage')}>
                             CONSULTA POR QR
                         </button>
                     </div>
@@ -29,7 +33,8 @@ export default function Dashboard() {
                             className="text-white focus:ring-4 w-full
                             bg-gradient-to-r from-greenButton to-darkGreenButton
                            focus:outline-none focus:ring-blue-300 rounded-lg 
-                           text-sm sm:w-auto px-5 py-2.5 text-center font-bold">
+                           text-sm sm:w-auto px-5 py-2.5 text-center font-bold"
+                           onClick={()=>router.push('/consultaccpage')}>
                             CONSULTA POR CC
                         </button>
 
