@@ -1,12 +1,23 @@
 "use client";
 import { useState, useEffect } from "react";
 import { Html5QrcodeScanner, Html5QrcodeScanType } from "html5-qrcode";
+import loginService from '@/pages/api/user/login'
+import Swal from "sweetalert2";
 
 export default function Qrpage() {
 
-    const [scanResult, setScanResult] = useState('');;
+    const [scanResult, setScanResult] = useState('');
+    const [dataEmployees, setDataEmployees] = useState([]);
 
+    const loginservice = new loginService();
+
+    async function getEmployees() {
+        const datosEmpleados = await loginservice.getEmpleadosActivos();
+        setDataEmployees(datosEmpleados)
+    }
     useEffect(() => {
+
+        getEmployees()
         // Asegúrate de inicializar el escáner dentro de useEffect
         const scanner = new Html5QrcodeScanner(
             "reader",
@@ -26,7 +37,23 @@ export default function Qrpage() {
                 // Callback de éxito
                 console.log("Resultado escaneado:", result);
                 setScanResult(result);
-                scanner.clear(); // Limpia el escáner después de leer
+                const found = dataEmployees.find((element) => element > 10);
+
+                if (found) {
+                    Swal.fire({
+                        title: "EMPLEADO EXISTENTE",
+                        icon: "success",
+                        draggable: true
+                    });
+                } else {
+                    Swal.fire({
+                        title: "EL EMPLEADO NO EXISTE",
+                        icon: "error",
+                        draggable: true
+                    });
+                }
+
+                scanner.clear();
             },
             (error: string) => {
                 // Callback de error
